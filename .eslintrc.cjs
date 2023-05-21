@@ -8,8 +8,15 @@ module.exports = {
 		'eslint:recommended',
 		'@vue/eslint-config-prettier/skip-formatting',
 	],
+	env: {
+		'vue/setup-compiler-macros': true,
+	},
+	parserOptions: {
+		ecmaVersion: '2022',
+		sourceType: 'module',
+	},
+
 	rules: {
-		'no-console': process.env.NODE.ENV === 'production' ? 'error' : 'off',
 		'prettier/prettier': [
 			'error',
 			{
@@ -24,8 +31,5 @@ module.exports = {
 				endOfLine: 'auto', // 한줄 추가
 			},
 		],
-	},
-	parserOptions: {
-		ecmaVersion: 'latest',
 	},
 };
