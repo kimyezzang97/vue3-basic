@@ -38,7 +38,7 @@ export default {
 		},
 		contents: {
 			type: String,
-			reauired: true,
+			//reauired: true,
 		},
 		isLike: {
 			type: Boolean,
